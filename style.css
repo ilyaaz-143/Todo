@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin' ,sans-serif;
+  }
+  body{
+    color: white;
+  }
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+  .top-div{
+    width: 100%;
+    height: 36vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('images/bg-desktop-dark.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  svg{
+    cursor: pointer;
+  }
+  .title{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .title h1{
+    font-size: 46px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+  }
+  .bottom-part{
+    width: 100%;
+    height: 64vh;
+    background-color: #181824;
+  }
+  .inputTodo{
+    /* padding: 20px 10px; */
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 23%;
+    background-color: #25273C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+  }
+  input[type="text"]{
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    width: 60%;
+    /* flex: 1; */
+  }
+.radio{
+    padding: 3px 6px;
+    border: 1px solid aliceblue;
+    border-radius: 50%;
+    background-image: url('images/icon-check.svg'),linear-gradient(to right, hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 2;
+  }
+  .done svg{
+      display: none;
+  }
+  del{
+      color: #4D4E6A;
+  }
+  .list{
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 32%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+  }
+  .info{
+    background-color: #25273C;
+  }
+  .todo{
+    width: 100%;
+    padding: 10px 10px;
+    border-bottom: .1px solid aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .round{
+    padding: 10px;
+    border: 1px solid aliceblue;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .to-do{
+      flex: .9;
+  }
+  footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    color: #4D4E6A;
+  }
+  footer span a{
+    text-decoration: none;
+    color: #4D4E6A;
+  }
+  .active{
+    color: #4C6AB6;
+    transition: 300ms ease;
+  }
+  a:hover{
+    color: aliceblue;
+  }
+  span:hover{
+    color: aliceblue;
+  }
+  .menu{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #25273C;
+    color: #4D4E6A;
+    position: absolute;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+  }
+  span{
+    cursor: pointer;
+    transition: 300ms ease;
+  }
+  span:focus{
+    color: #4C6AB6;
+  }
+  .menu a span{
+      text-decoration: none;
+      padding: 10px;
+  }
+  .completed{
+    text-decoration: line-through;
+    opacity: .5;
+    
+  }
+  .hiden{
+    display: none;
+  }
+  @media screen and ( max-width:600px ) {
+    .inputTodo{
+        width: 360px;
+    }   
+    .list{
+        width: 360px;
+    }
+    .inner{
+        display: none;
+    }
+    .menu{
+        display: block;
+        width: 360px;
+        padding: 10px;
+    }
+  }
+  @media screen and ( max-width:400px ) {
+    .inputTodo{
+        width: 300px;
+    }   
+    .list{
+        width: 300px;
+    }
+    .menu{
+        width: 300px;
+        padding: 10px;
+    }
+  }
